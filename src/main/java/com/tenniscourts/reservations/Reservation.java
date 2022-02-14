@@ -29,6 +29,7 @@ import java.math.BigDecimal;
 public class Reservation extends BaseEntity<Long> {
 
     @OneToOne
+    @NotNull
     private Guest guest;
 
     @ManyToOne
